@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title id="tittle" >Pomodoro Timer</title>
+</head>
+<body>
+    <nav class="navbar" >
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a  id="logo"><i class="far fa-clock" ></i> Pomodoro Timer </a> 
+        <ul>
+            <li><a href="https://www.linkedin.com/in/flamerson-andrade-2306b41b0/" ><i class="fab fa-linkedin-in"  ></i > Linkedin</a></li>
+            <li><a href="https://github.com/Flamerson" ><i class="fab fa-github"></i> Github</a></li>
+        </ul>
+    </nav>
+    <div class="Timer" >
+        <span id="minute" >25</span><span>:</span><span id="second" >00</span>
+    </div>
+    <div class="btn-config">
+        <input class="btn" type="button" id="start" value="Start" onclick="startStop();"/>
+        <input class="btn" type="button" id="stop" value="Stop" onclick="Stop();"/>
+        <input class="btn" type="button" id="reset" value="Reset" onclick="Reset();" />
+    </div>
+    
+
+    <div class="footer">
+        <p>&copy; Flamerson de andrade bezerra</p>
+    </div>
+
+    <audio id="alert-sound" src="./sounds/Mechanical Clock Ring.mp3" preload="auto"></audio>
+
+
+
+    <script src="timer.js"></script>
+</body>
+</html>
